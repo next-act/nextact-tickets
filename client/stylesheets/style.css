@@ -1,0 +1,84 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0 !important;
+}
+a {
+  color: rgba(22, 160, 133, 1.0);
+}
+a:hover {
+  color: rgba(22, 160, 133, 1.0);
+}
+.navbar-inverse, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-collapse {
+  background-color: rgba(22, 160, 133, 1.0);
+  border-color: rgba(3, 135, 109, 1.0);
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: rgba(52, 172, 148, 1.0);
+  border-color: rgba(3, 135, 109, 1.0);
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+  color: rgba(236, 240, 241, 1.0);;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover {
+  color: rgba(189, 195, 199, 1.0);
+}
+.btn-primary {
+  background-color: rgba(22, 160, 133, 1.0);
+  border-color: rgba(0, 106, 85, 1.0);
+}
+.btn-primary:hover {
+  background-color: rgba(52, 172, 148, 1.0);
+  border-color: rgba(0, 106, 85, 1.0);
+}
+.btn-primary:active {
+  background-color: rgba(0, 106, 85, 1.0);
+  border-color: rgba(0, 106, 85, 1.0);
+}
+.table-bordered > tbody > tr > .slot {
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+.taken {
+  background-color: rgba(238, 33, 61, 1.0);
+  border-color: rgba(200, 4, 31, 1.0);
+}
+.yours {
+  background-color: rgba(22, 160, 133, 1.0);
+  border-color: rgba(3, 135, 109, 1.0);
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.errors{
+  position: fixed;
+  z-index: 10000;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
+.alert {
+  background-color: rgba(247, 114, 132,1.0);
+  border-color: rgba(244, 73, 97, 1.0);
+          animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+     -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+  width: 250px;
+  float: right;
+  clear: both;
+  margin-bottom: 5px;
+  pointer-events: auto;
+}
