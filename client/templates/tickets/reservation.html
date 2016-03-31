@@ -1,0 +1,20 @@
+<template name="reservation">
+	<div class="row">
+		<div class="col-md-5 col-md-offset-1 col-sm-offset-0">
+			<h2>
+				Reservation:
+			</h2>
+			<p>Name: {{fullname}}</p>
+			<p>Email: {{email}}</p>
+			<p>Reserved show: {{show}}</p>
+			<p>Ticket details:
+				<ul>
+					<li>Tickets for prefrosh: {{prefroshTickets}}</li>
+					<li>Tickets for MIT affiliates: {{mitTickets}}</li>
+					<li>Tickets for non-MIT affiliates: {{otherTickets}}</li>
+				</ul>
+			</p>
+			<button class="btn btn-primary text-center" id="submit">Cancel Reservation</button>
+		</div>
+	</div>
+</template>
