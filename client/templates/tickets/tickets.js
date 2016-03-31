@@ -15,8 +15,8 @@ Template.tickets.events({
 	'click #submit': function (event) {
 		event.preventDefault();
 		var prefroshTickets = !!($('#prefrosh-tickets').val()) ? parseInt($('#prefrosh-tickets').val()) : 0;
-		var mitTickets = !!($('#mit-tickets').val()) ? parseInt($('#prefrosh-tickets').val()) : 0;
-		var otherTickets = !!($('#other0-tickets').val()) ? parseInt($('#prefrosh-tickets').val()) : 0;
+		var mitTickets = !!($('#mit-tickets').val()) ? parseInt($('#mit-tickets').val()) : 0;
+		var otherTickets = !!($('#other-tickets').val()) ? parseInt($('#other-tickets').val()) : 0;
 		var reservation = {
 			fullname: $('#fullname').val(),
 			email: $('#email').val(),
