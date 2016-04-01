@@ -1,3 +1,4 @@
+// TODO: make publications more secure
 Meteor.publish('reservations', function() {
 	return Reservations.find();
 })

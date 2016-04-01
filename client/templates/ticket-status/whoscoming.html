@@ -1,0 +1,41 @@
+<template name="whoscoming">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1 col-sm-offset-0">
+			<h2>Reservations for {{show}}</h2>
+			<div class="form-inline">
+				<div class="form-group">
+					<select class="form-control" id="show-date">
+						<option>Thursday April 7th</option>
+						<option>Friday April 8th</option>
+						<option>Saturday April 9th</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<button class="form-control btn btn-primary" id="submit">Search</button>
+				</div>
+			</div>
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>Full Name</th>
+						<th>Email</th>
+						<th>Prefrosh Tickets</th>
+						<th>MIT affiliate Tickets</th>
+						<th>non-MIT affiliate Tickets</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each tickets}}
+						<tr>
+							<td>{{fullname}}</td>
+							<td>{{email}}</td>
+							<td>{{prefroshTickets}}</td>
+							<td>{{mitTickets}}</td>
+							<td>{{otherTickets}}</td>
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>

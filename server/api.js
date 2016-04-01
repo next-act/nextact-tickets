@@ -1,3 +1,4 @@
+// TODO: make server side error propogate to client
 Meteor.methods({
 	sendEmail: function (id) {
 		// Syntax Check

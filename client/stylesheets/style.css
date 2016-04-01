@@ -1,3 +1,4 @@
+/* Make color scheme be controlled by a central variable, not hardcoded*/
 * {
   font-family: 'Open Sans', sans-serif;
   border-radius: 0 !important;
@@ -26,11 +27,11 @@ a:hover {
   background-color: rgba(22, 160, 133, 1.0);
   border-color: rgba(0, 106, 85, 1.0);
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus {
   background-color: rgba(52, 172, 148, 1.0);
   border-color: rgba(0, 106, 85, 1.0);
 }
-.btn-primary:active {
+.btn-primary:active, .btn-primary:focus:active {
   background-color: rgba(0, 106, 85, 1.0);
   border-color: rgba(0, 106, 85, 1.0);
 }
