@@ -6,7 +6,7 @@ Template.reservation.events({
 			if (error) {
 				return throwError(error.reason);
 			}
-			Router.go('tickets');
+			Router.go('cancel');
 		})
 	}
 })
