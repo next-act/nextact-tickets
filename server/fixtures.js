@@ -2,14 +2,14 @@
 if (Count.find().count() === 0 ) {
 	Count.insert({
 		show: 'Thursday April 7th',
-		availableSeats: 164
+		availableSeats: 145
 	});
 	Count.insert({
 		show: 'Friday April 8th',
-		availableSeats: 164
+		availableSeats: 145
 	});
 	Count.insert({
 		show: 'Saturday April 9th',
-		availableSeats: 164
+		availableSeats: 145
 	});
 }
