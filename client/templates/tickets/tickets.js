@@ -20,7 +20,7 @@ Template.tickets.events({
 		var reservation = {
 			fullname: $('#fullname').val(),
 			email: $('#email').val(),
-			show: $('#show-date').val(),
+			show: changeShowDate($('#show-date').val()),
 			prefroshTickets: prefroshTickets,
 			mitTickets: mitTickets,
 			otherTickets: otherTickets
@@ -42,3 +42,18 @@ Template.tickets.events({
 		});
 	}
 });
+
+/**
+ * This is a shitty function to patch a bug that I did with the show dates. 
+ * Input: show date strings (April 6th/7th/8th)
+ * Returns: show date string which correctly corresponds to database (April 7th/8th/9th)
+ */
+function changeShowDate(show){
+	if(show.equals("Thursday April 6th"))
+		return "Thursday April 7th"
+	else if(show.equals("Friday April 7th"))
+		return "Friday April 8th";
+	else if(show.equals("Saturday April 8th"))
+		return "Saturday April 9th";
+	return "Error in conversion";	
+}

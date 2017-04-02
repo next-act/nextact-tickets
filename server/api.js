@@ -12,7 +12,7 @@ Meteor.methods({
 				id: reservation._id,
 				fullname: reservation.fullname, 
 				email: reservation.email,
-				show: reservation.show,
+				show: reverseShowDate(reservation.show),
 				prefroshTickets: reservation.prefroshTickets,
 				mitTickets: reservation.mitTickets,
 				otherTickets: reservation.otherTickets
@@ -25,3 +25,18 @@ Meteor.methods({
 		});
 	}
 });
+
+/**
+ * This is a shitty function to patch a bug that I did with the show dates. 
+ * Input: show date strings (April 7th/8th/9th)
+ * Returns: show date string which correctly corresponds to show (April 6th/7th/8th)
+ */
+function reverseShowDate(show){
+	if(show.equals("Thursday April 7th"))
+		return "Thursday April 6th"
+	else if(show.equals("Friday April 8th"))
+		return "Friday April 7th";
+	else if(show.equals("Saturday April 9th"))
+		return "Saturday April 8th";
+	return "Error in conversion";	
+}
