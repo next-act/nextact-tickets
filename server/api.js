@@ -32,11 +32,11 @@ Meteor.methods({
  * Returns: show date string which correctly corresponds to show (April 6th/7th/8th)
  */
 function reverseShowDate(show){
-	if(show.equals("Thursday April 7th"))
+	if(show === "Thursday April 7th")
 		return "Thursday April 6th"
-	else if(show.equals("Friday April 8th"))
+	else if(show === "Friday April 8th")
 		return "Friday April 7th";
-	else if(show.equals("Saturday April 9th"))
+	else if(show === "Saturday April 9th")
 		return "Saturday April 8th";
 	return "Error in conversion";	
 }

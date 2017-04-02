@@ -49,11 +49,11 @@ Template.tickets.events({
  * Returns: show date string which correctly corresponds to database (April 7th/8th/9th)
  */
 function changeShowDate(show){
-	if(show.equals("Thursday April 6th"))
+	if(show === "Thursday April 6th")
 		return "Thursday April 7th"
-	else if(show.equals("Friday April 7th"))
+	else if(show === "Friday April 7th")
 		return "Friday April 8th";
-	else if(show.equals("Saturday April 8th"))
+	else if(show === "Saturday April 8th")
 		return "Saturday April 9th";
 	return "Error in conversion";	
 }
