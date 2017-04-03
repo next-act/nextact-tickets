@@ -1,8 +1,0 @@
-{  
-    "director":"Kristina Kim '17", // name of director and their class year
-    "title":"Jekyll & Hyde", // name of the show
-    "open_seats":145, // number of open seats in the house
-    "first_showing":"Thursday April 6th", // date of first showing
-    "second_showing":"Friday April 7th",  // "" second showing
-    "third_showing":"Saturday April 8th"  // "" third showing
-}
