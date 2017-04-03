@@ -8,7 +8,7 @@ Template.tickets.helpers({
 	},
 	errorClass: function (field) {
 		return !!Session.get('ticketErrors')[field] ? 'has-error' : '';
-	}
+	},
 });
 
 Template.tickets.events({

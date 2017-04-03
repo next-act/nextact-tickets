@@ -1,5 +1,10 @@
 {
   "public": {
-
+    "director":"Kristina Kim '17",
+    "title":"Jekyll & Hyde",
+    "open_seats":145,
+    "first_showing":"Thursday April 6th", 
+    "second_showing":"Friday April 7th",  
+    "third_showing":"Saturday April 8th" 
   }
 }
